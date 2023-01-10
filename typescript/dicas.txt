@@ -1,0 +1,25 @@
+01 - instalação
+npm i typescript -D
+
+02 - O arquivo que quiser compilar
+npx tsc index.js
+
+03 -  instalando o ts-node e code-Runner
+npm i ts-node -D
+
+04- cria uma pasta na raiz (.vscode) e dentro 
+cria um arquivo (settings.json) e abre as chaves
+e coloca dentro ("code-runner.executorMap") apaga 
+tudo deixa so "typescript": "ts-node",
+acrecenta "typescript": ("npx ts-node --files")
+
+05- ESLint
+npm i eslint -D
+
+npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+
+
+06 - prettier
+npm i prettier eslint-config-prettier eslint-plugin-prettier -d
+ 
+OBS pesquisar e colocar plugin do .eslint 

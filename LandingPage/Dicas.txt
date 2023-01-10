@@ -1,0 +1,14 @@
+0 -> Todas as tages
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+
+
+01 -> validador do HTML 
+https://validator.w3.org/nu/#textarea
+
+
+02 -> Imgs
+https://undraw.co/illustrations
+
+
+03 -> Cor de fundo backgrounds
+https://www.svgbackgrounds.com/
