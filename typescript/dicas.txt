@@ -1,25 +1,53 @@
-01 - instalação
-npm i typescript -D
+[OBS] faz o codigo primeiro em javascript se
+não for inferido o tipo ai inferimos
+se é uma string ou qulquer uma dessas a baixo.
 
-02 - O arquivo que quiser compilar
-npx tsc index.js
+01 - tipos basicos aqi ocorre inferencia de tipos
+let nome: string = 'TArcisio';  
+let idade: number = 012345;
+let adult: boolean = true;
+let simbolo: symbol('qualquer-symbol)
 
-03 -  instalando o ts-node e code-Runner
-npm i ts-node -D
+02 - Arrays
+let arrayDenumeros: Array<number> = [1, 2, 3];
+let arrayDENumeros: number[] = [1, 2, 3];
+let arrayDeStrings: Array<number> = ['a', 'b'];
+let arrayDeStrings2: string[] = ['a', 'b'];
 
-04- cria uma pasta na raiz (.vscode) e dentro 
-cria um arquivo (settings.json) e abre as chaves
-e coloca dentro ("code-runner.executorMap") apaga 
-tudo deixa so "typescript": "ts-node",
-acrecenta "typescript": ("npx ts-node --files")
+03 - Objetos
+let pesos: { nome: string, idade: number, adulto?: boolean}={
+  idade: 30,
+  nome:'Tarcisio'
+}
 
-05- ESLint
-npm i eslint -D
+04 - funções
+function soma(x: number, y: number): number {
+  return x+y;
+}
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+05 - Tipo any
+utilizar em ultimo caso
 
+06 - tipo void
+não retorna nada
+apenas ezibe
 
-06 - prettier
-npm i prettier eslint-config-prettier eslint-plugin-prettier -d
- 
-OBS pesquisar e colocar plugin do .eslint 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+07 - objetos
+[OBS] readonly não pode alterar o valor
+
+const obj: {
+  readonly chaveA: string;
+  chaveB: string;
+} = {
+  chaveA: string;
+  chaveB: string;
+}
+obj.chaveb = 'outro valor';
+console.log(chaveA)
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+08 - tipos de array
